@@ -11,10 +11,18 @@ namespace SimplexApp.Simplex
     public class SimplexManagerDefault: ISimplexManager
     {
         private Simplex simplex;
+        public static ISimplexManager sharedInstance = new SimplexManagerDefault();
 
-        public SolvedSimplex solveSimplex(UserData userData)
+        private SimplexManagerDefault()
         {
-            simplex = new Simplex(userData.)
+
+        }
+
+        public SolvedSimplex solveSimplex(ExtendedUserData data)
+        {
+            simplex = new Simplex(data.functionVariables, data.allVariables, data.freeVariables);
+            var result = simplex.maximize();
+            SolvedSimplex solvedSimplex = new SolvedSimplex(data, result.Item1, result.Item2);
         }
     }
 }

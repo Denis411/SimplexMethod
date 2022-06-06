@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic
+using System.Collections.Generic;
 
 namespace SimplexApp.Models
 {
     public struct SolvedSimplex
     {
-        public UserData fromData;
+        public ExtendedUserData fromData;
         public double value;
         public List<double> variables = new List<double>();
         public List<string> variablesToString
         {
-            get
-            {
-                return doubleToString(variables);
-            }
+            get { return doubleToString(variables); }
         };
 
-        public SolvedSimplex(UserData data, double value, double[] variables)
+        public SolvedSimplex(ExtendedUserData data, double value, double[] variables)
         {
             this.fromData = data;
             this.value = value;
