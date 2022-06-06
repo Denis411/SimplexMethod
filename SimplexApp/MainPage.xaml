@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <TextBlock HorizontalAlignment="Left" Margin="46,32,0,0" TextWrapping="Wrap" Text="Создание симплекс-таблицы" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_1" FontSize="32" FontWeight="Bold" Width="496" Height="38"/>
+        <Border BorderBrush="Black" BorderThickness="1" Height="300" Margin="125,99,725,0" VerticalAlignment="Top" Width="650">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Количество неизвестных ограничений" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_2" Width="450" Height="26" FontSize="22" Margin="36,134,0,0"/>
+        </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="162,156,0,0" TextWrapping="Wrap" Text="Количество ограничений" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_2" Width="450" Height="26" FontSize="22"/>
+        <TextBox HorizontalAlignment="Left" Margin="657,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="44" Width="93" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="657,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="44" Width="93" FontSize="18"/>
+        <ComboBox Margin="606,296,0,0" Width="150" SelectionChanged="ComboBox_SelectionChanged" Height="39" FontSize="24"/>
+        <Button Content="Отмена" Height="32" Margin="423,479,0,0" VerticalAlignment="Top" Width="162"/>
+        <Button Content="Далее" Height="32" Margin="621,479,0,0" VerticalAlignment="Top" Width="154" Background="#3318AB21"/>
     </Grid>
 </Page>
