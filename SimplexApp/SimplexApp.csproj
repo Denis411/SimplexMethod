@@ -163,6 +163,15 @@
       <Version>6.2.13</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Simplex\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Simplex\Simplex.cs" />
+    <None Include="Models\SolvedSimplex.cs" />
+    <None Include="Simplex\SimplexManager.cs" />
+    <None Include="Models\ExtendedUserData.cs" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

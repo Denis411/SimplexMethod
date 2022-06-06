@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SimplexApp.Models
 {
-    public enum FunctionType
-    {
-        maximum,
-        minimum
-    }
+
     public struct UserData
     {
         public int countOfLimits;
